@@ -1,0 +1,50 @@
+
+<%- include("partials/header"); -%>
+
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>blog</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/css/styles1.css">
+  <nav class="navbar navbar-default">
+    <div class="container">
+      <div class="navbar-header">
+        <p class="navbar-brand">My WellNessPal Blog</p>
+      </div>
+        <ul class="nav navbar-nav navbar-right">
+          <li id="home"><a href="/">HOME</a></li>
+          <!-- <li id="profile"><a href="/secrets">PROFILE</a></li> -->
+          <li id="profile"><a href="/profile">PROFILE</a></li>
+          <li id="compose"><a href="/compose">COMPOSE</a></li>
+          <li id="weatherapp"><a href="/weatherapp">WEATHERAPP</a></li>
+
+        </ul>
+    </div>
+  </nav>
+
+  <body>
+    <div class="container">
+
+
+<%  posts.forEach(function(post){ %>
+<link rel="icon" href="favicon1.png">
+
+<div>
+
+  <h1><%=post.title%></h1>
+  <p><%=post.content%></p>
+  <hr>
+
+</div>
+
+
+
+<% }) %>
+
+
+<%- include("partials/footer"); -%>

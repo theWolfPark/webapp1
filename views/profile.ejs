@@ -1,0 +1,249 @@
+<%- include("partials/header"); -%>
+
+  <!DOCTYPE html>
+  <html lang="en" dir="ltr">
+
+  <head>
+
+    <link rel="stylesheet" href="css/styles3.css">
+
+    <link rel="icon" href="favicon1.png">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Montserrat:wght@300&family=Sacramento&display=swap&family=Satisfy&display=swap&family=Oleo+Script&display=swap"
+      rel="stylesheet">
+    <!-- Bootstrap Scripts -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+      integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+      crossorigin="anonymous"></script>
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"></script>
+    <meta charset="utf-8">
+    <title>profile</title>
+  </head>
+
+  <body>
+
+    <div class="switch"> Dark Mode:
+      <span class="inner-switch">OFF</span>
+    </div>
+
+    <div class="top-container">
+      <a name="top-container"></a>
+
+      <div id="dropdown" class="dropdown">
+        <button class="btn btn-lg btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown"
+          aria-haspopup="true" aria-expanded="false">
+          Menu
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+          <button class="dropdown-item" type="button"><a href="/">HOME</a></button>
+          <button class="dropdown-item" type="button"><a href="/weatherapp">WEATHERAPP</a></button>
+          <button class="dropdown-item" type="button"><a href="/blog">BLOG</a></button>
+          <button class="dropdown-item" type="button"><a href="/compose">COMPOSE</a></button>
+        </div>
+      </div>
+
+      <a class="logout btn btn-dark btn-lg" href="/logout" role="button">Log Out</a>
+
+
+      <!-- Side navigation -->
+      <div class="sidenav">
+        <a href="#top">Top</a>
+        <a href="#testimonial-carousel">Carousel</a>
+        <a href="#WHtR">WHtR</a>
+        <a href="#contact">Contact</a>
+      </div>
+
+      <h1 class="name" style="font-size:8vw;">Wellnesspal</h1>
+      <h2 class="profession" style="font-size:2.5vw;">Achieve your wellness dreams.</h2>
+      <!-- <img class="bird" src="images/bird.png" alt="bird-image"> -->
+      <!-- <img class="mountain"src="images/image1.png" alt="mountain-image"> -->
+    </div>
+
+
+
+    <!-- testimonials -->
+    <section id="testimonials">
+      <div id="testimonial-carousel" class="carousel slide" data-ride="true" data-interval="4000">
+        <div class="carousel-inner">
+          <div class="testimonial-item1 carousel-item active">
+            <img class="testimonial-image" src="images/abs1.png" alt="dog-profile">
+            <h2 class="testimonial-text">“If you think lifting is dangerous, try being weak. <br>Being weak <br>is
+              dangerous”</h2>
+            <em>- Bret Contreras</em>
+            <br><br>
+            <h1>#1</h1>
+          </div>
+          <div class="testimonial-item3 carousel-item">
+            <img class="testimonial-image" src="images/abs2.jpeg" alt="lady-profile">
+            <h2 class="testimonial-text">“The last three or four reps is what makes the muscle grow. <br>This area of
+              pain divides a champion from <br>someone who is not a champion </h2>
+            <em>– Arnold Schwarzenegger</em>
+            <br><br>
+            <h1>#2</h1>
+          </div>
+          <div class="testimonial-item3 carousel-item">
+            <img class="testimonial-image" src="images/abs3.jpeg" alt="lady-profile">
+            <h2 class="testimonial-text">“You learn more from failure than from sucess. <br>Dont let it stop
+              you.<br>Failure builds character” </h2>
+            <em>–Unknown</em>
+            <br><br>
+            <h1>#3</h1>
+          </div>
+          <div class="testimonial-item3 carousel-item">
+            <img class="testimonial-image" src="images/abs4.jpeg" alt="lady-profile">
+            <h2 class="testimonial-text">“Don't let yesterday <br>take up too much <br>of today” </h2>
+            <em>–Will Rodgers</em>
+            <br><br>
+            <h1>#4</h1>
+          </div>
+          <div class="testimonial-item3 carousel-item">
+            <img class="testimonial-image" src="images/abs5.jpeg" alt="lady-profile">
+            <h2 class="testimonial-text">“Success usually comes to those <br>who are <br>too busy to be looking for it"
+            </h2>
+            <em>– Henry David Thoreau</em>
+            <br><br>
+            <h1>#5</h1>
+          </div>
+          <div class="testimonial-item3 carousel-item">
+            <img class="testimonial-image" src="images/img1.jpeg" alt="lady-profile">
+            <h2 class="testimonial-text">“Things work out best for those <br>who make the best of <br>how things work
+              out" </h2>
+            <em>– John Wooden</em>
+            <br><br>
+            <h1>#6</h1>
+          </div>
+          <div class="testimonial-item3 carousel-item">
+            <img class="testimonial-image" src="images/img2.jpeg" alt="lady-profile">
+            <h2 class="testimonial-text">“The last few sets <br>of the workout is what<br>really count” </h2>
+            <em>–Unknown</em>
+            <br><br>
+            <h1>#7</h1>
+          </div>
+          <div class="testimonial-item3 carousel-item">
+            <img class="testimonial-image" src="images/img3.jpeg" alt="lady-profile">
+            <h2 class="testimonial-text">All progress takes place <br>outside <br>the comfort zone” </h2>
+            <em>– Michael John Bobak</em>
+            <br><br>
+            <h1>#8</h1>
+          </div>
+          <div class="testimonial-item3 carousel-item">
+            <img class="testimonial-image" src="images/img4.jpeg" alt="lady-profile">
+            <h2 class="testimonial-text">“The only place where success <br>comes before work<br>is in the dictionary”
+            </h2>
+            <em>– Vidal Sassoon</em>
+            <br><br>
+            <h1>#9</h1>
+          </div>
+          <div class="testimonial-item3 carousel-item">
+            <img class="testimonial-image" src="images/img5.jpeg" alt="lady-profile">
+            <h2 class="testimonial-text">“The clock is ticking. Are you <br>becoming the person <br>you want to be”
+            </h2>
+            <em>–Greg Plitt</em>
+            <br><br>
+            <h1>#10</h1>
+          </div>
+          <div class="testimonial-item3 carousel-item">
+            <img class="testimonial-image" src="images/img6.jpeg" alt="lady-profile">
+            <h2 class="testimonial-text">“Your body can stand almost anything. <br>It’s your mind that <br>you have to
+              convine" </h2>
+            <em>–Bald brothers</em>
+            <br><br>
+            <h1>#11</h1>
+          </div>
+          <div class="testimonial-item3 carousel-item">
+            <img class="testimonial-image" src="images/img7.jpeg" alt="lady-profile">
+            <h2 class="testimonial-text">“If you are working on something that you really care about <br>you don’t have
+              to be pushed. <br>the vision pulls you” </h2><br><br>
+            <em>–Steve Jobs</em>
+            <br><br>
+            <h1>#12</h1>
+          </div>
+          <div class="testimonial-item4 carousel-item">
+            <img class="testimonial-image" src="images/img8.jpeg" alt="lady-profile">
+            <h2 class="testimonial-text">“We may encounter many defeats <br>but we must not <br>be defeated” </h2>
+            <em>–Maya Angelou</em>
+            <br><br>
+            <h1>#13</h1>
+          </div>
+          <div class="testimonial-item4 carousel-item">
+            <img class="testimonial-image" src="images/img9.jpeg" alt="lady-profile">
+            <h2 class="testimonial-text">“We generate fears while we sit <br>we overcome them <br>by action” </h2>
+            <em>–Dr Henry Link</em>
+            <br><br>
+            <h1>#14</h1>
+          </div>
+          <div class="testimonial-item4 carousel-item">
+            <img class="testimonial-image" src="images/img10.jpeg" alt="lady-profile">
+            <h2 class="testimonial-text">“The only limit to our realization of tommorow  <br>will be our doubts <br>of today” </h2>
+            <em>–Franklin D. Roosevelt</em>
+            <br><br>
+            <h1>#15</h1>
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#testimonial-carousel" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+
+        </a>
+        <a class="carousel-control-next" href="#testimonial-carousel" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        </a>
+      </div>
+    </section>
+
+
+    <div class="middle-container">
+
+      <div id="WHtR" class="bmi">
+
+        <h2>Waist to height ratio Calculator</h2>
+        <form name="waistToHeightForm">
+          Your Waist(in): <input type="text" name="waist" size="10"><br /><br>
+          Your Height(in): <input type="text" name="height" size="10"><br /><br>
+          <input type="button" value="Calculate WHtR" onClick="WHtRcalculator()"><br /><br>
+          Your WHtR: <input type="text" name="WHtR" size="10"><br /><br>
+          Analysis: <input type="text" name="meaning" size="60"><br /><br>
+          <input type="reset" value="Reset" /><br>
+        </form>
+
+      </div>
+
+    </div>
+
+
+    <div id="contact" class="bottom-container">
+      <a class="footer-link" href="https://www.instagram.com/mywellnesspals/" target="_blank">Instagram</a>
+      <a class="footer-link" href="https://twitter.com/mywellnesspals" target="_blank">Twitter</a>
+      <a class="footer-link" href="/profile">Website</a>
+      <p class="copyright">© 2020 Wellnesspal</p>
+    </div>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js">
+    </script>
+
+    <script src="script.js"></script>
+    <script src="script2.js"></script>
+
+
+  </body>
+
+  </html>
+
+  <%- include("partials/footer"); -%>

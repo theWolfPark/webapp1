@@ -1,0 +1,57 @@
+<%- include("partials/header"); -%>
+ 
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/styles1.css"> 
+<link rel="stylesheet" href="css/styles2.css">
+
+<!-- uncomment styles.css for darkmode -->
+<!-- <link rel="stylesheet" href="css/styles.css"> -->
+
+<div class="api">
+
+<!-- <div class="switch"> Dark Mode:
+    <span class="inner-switch">OFF</span>
+</div> -->
+
+</div>
+<section class="top-banner">
+  <div class="container">
+
+    <div id="dropdown" class="dropdown">
+      <button class="btn btn-lg btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        Menu
+      </button>
+      <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+        <button class="dropdown-item" type="button"><a href="/">HOME</a></button>
+        <!-- <li id="profile"><a href="/secrets">PROFILE</a></li> -->
+        <button class="dropdown-item" type="button"><a href="/profile">PROFILE</a></button>
+        <button class="dropdown-item" type="button"><a href="/compose">COMPOSE</a></button>
+        <button class="dropdown-item" type="button"><a href="/blog">BLOG</a></button>
+
+      </div>
+    </div>
+
+    <h1 class="heading">WellNessPal WeatherApp</h1>
+    <h3>Complementary tool to help our WellNessPals plan outdoor WellNess activities</h3><br><br><br>
+    <form>
+      <input type="text" placeholder="Look for a city" autofocus>
+      <button type="submit">SEARCH</button>
+      <span class="msg"></span>
+    </form>
+  </div>
+</section>
+<section class="ajax-section">
+  <div class="container">
+    <ul class="cities"></ul>
+  </div>
+</section>
+<footer class="page-footer">
+  
+
+<script src="script1.js"></script>
+<script src="script.js"></script>
+
+</footer>
+<%- include("partials/footer"); -%>
+
+

@@ -1,0 +1,49 @@
+
+<%- include("partials/header"); -%>
+
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Blog</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/css/styles1.css">
+
+  <nav class="navbar navbar-default">
+    <div class="container">
+      <div class="navbar-header">
+        <p class="navbar-brand">My Wellnesspal Blog</p>
+      </div>
+        <ul class="nav navbar-nav navbar-right">
+          <li id="home"><a href="/">HOME</a></li>
+          <!-- <li id="profile"><a href="/secrets">PROFILE</a></li> -->
+          <li id="profile"><a href="/profile">PROFILE</a></li>
+          <li id="blog"><a href="/blog">BLOG</a></li>
+          <li id="weatherapp"><a href="/weatherapp">WEATHERAPP</a></li>
+        </ul>
+    </div>
+  </nav>
+
+  <body>
+    <div class="container">
+
+
+
+<h1>Compose</h1>
+<form class="" action="/compose" method="post">
+  <div class="form-group">
+    <label class="label">Name</label>
+    <input id = "name" class="form-control" type="text" name="postTitle" placeholder="Enter your name"><br><br>
+    <label class="label">Post</label>
+    <textarea id = "blogaway" class="form-control" name="postBody" rows="5" cols="30" placeholder="Blog away" ></textarea>
+    <!-- <input type="hidden" name="postCreatedOn"> 
+    <label for="img">Select image:</label>
+    <input type="file" id="img" name="postImg" accept="image/*">  -->
+  </div>
+  <button class="btn btn-primary" type="submit" name="button">Publish</button>
+</form>
+
+<%- include("partials/footer"); -%>
